@@ -9,6 +9,7 @@ def vertifier_site(url):
             if not site:
                 reponses.append({
                     "url":site,
+                    "status_reponse":"invalide",
                     "erreur":"url invalide"
                     })
                 continue
@@ -47,4 +48,3 @@ print(resulats)
 with open("resultats.json", 'w', encoding="utf-8") as f:
     json.dump(resulats, f, ensure_ascii=False, indent=2)
 
-    
