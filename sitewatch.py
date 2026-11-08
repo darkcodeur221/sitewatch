@@ -9,7 +9,7 @@ def vertifier_site(url):
             if not site:
                 reponses.append({
                     "url":site,
-                    "status_reponse":"invalide",
+                    "statut":"invalide",
                     "erreur":"url invalide"
                     })
                 continue
