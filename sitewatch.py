@@ -19,7 +19,7 @@ def vertifier_site(url):
             try:
                 reponse = requests.get(site,timeout=5)
                 reponse.raise_for_status()
-                if reponse.status_code in range(200, 301):
+                if reponse.status_code in range(200, 300):
                     reponses.append({
                         "url":site,
                         "statut_code":reponse.status_code,
